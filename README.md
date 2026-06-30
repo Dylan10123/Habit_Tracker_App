@@ -10,7 +10,7 @@ Aplicación full-stack para crear hábitos, registrarlos día a día y visualiza
 Este es un proyecto de portfolio para practicar el stack de MEAN. La idea central es sencilla: el usuario define hábitos que quiere mantener (beber agua, leer, hacer ejercicio...), los marca como completados cada día, y la aplicación calcula automáticamente rachas y tendencias para ayudarle a mantener la constancia.
 
 > [!TIP]
-> 💡 Estas son las ideas planteadas para el **MVP**:
+> Estas son las ideas planteadas para el **MVP**:
 >
 > - Registro y login de usuarios con autenticación JWT
 > - CRUD de hábitos (crear, editar, eliminar, listar)
