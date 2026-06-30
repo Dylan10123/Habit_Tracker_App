@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, Document } from 'mongoose';
 
 // Lo primero que creo es una interfaz que defina los datos que contiene el usuario
 interface IUser extends Document {
