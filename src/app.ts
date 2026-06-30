@@ -1,6 +1,9 @@
+import connectDB from './config/db.js';
+import Habit from './models/Habit.js';
+import User from './models/User.js';
+import Log from './models/Log.js';
 import express from 'express';
 import dotenv from 'dotenv';
-import connectDB from './config/db.js';
 
 dotenv.config();
 connectDB();
