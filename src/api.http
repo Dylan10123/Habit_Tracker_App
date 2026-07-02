@@ -1,0 +1,18 @@
+### Registro de un usuario
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "name": "Tu nombre",
+  "email": "test@test.com",
+  "password": "123456"
+}
+
+### Inicio de sesión de un usuario
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "123456"
+}
