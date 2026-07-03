@@ -77,8 +77,8 @@ habit-tracker/
 - [x] Inicializar el proyecto (TypeScript, Express, pnpm)
 - [x] Conectar MongoDB
 - [x] Crear modelos (`User`, `Habit`, `Log`)
-- [ ] Autenticación completa (registro, login, middleware JWT)
-- [ ] CRUD de hábitos
+- [x] Autenticación completa (registro, login, middleware JWT)
+- [x] CRUD de hábitos
 - [ ] Endpoint de logs diarios
 - [ ] Lógica de estadísticas (rachas, promedios)
 - [ ] Integrar frontend (Angular o Vue)
