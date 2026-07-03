@@ -16,3 +16,37 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "123456"
 }
+
+### Obtener todos los hábitos (SUSTITUIR <token> por el que nos devuelva el login)
+GET http://localhost:3000/habits
+Authorization: Bearer <token>
+
+### Crear un hábito
+POST http://localhost:3000/habits
+Content-Type: application/json
+Authorization: Bearer <token>
+
+{
+  "name": "Ejercicio",
+  "category": "Salud",
+  "color": "#6366f1",
+  "targetFrequency": "daily",
+  "timesPerPeriod": 1
+}
+
+### Editar un hábito
+PUT http://localhost:3000/habits/<id>
+Content-Type: application/json
+Authorization: Bearer <token>
+
+{
+  "name": "Ejercicio actualizado",
+  "category": "Salud",
+  "color": "#6366f1",
+  "targetFrequency": "weekly",
+  "timesPerPeriod": 3
+}
+
+### Eliminar un hábito
+DELETE http://localhost:3000/habits/<id>
+Authorization: Bearer <token>
