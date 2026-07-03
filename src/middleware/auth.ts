@@ -28,7 +28,7 @@ export const authMiddleware = async (
       throw new Error();
     }
 
-    req.userId = decoded.id;
+    req.userId = String(decoded.id);
     next();
   } catch (error) {
     return res.status(403).json({
