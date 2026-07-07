@@ -1,6 +1,6 @@
 import mongoose, { Schema, model, Document } from 'mongoose';
 
-interface ILog extends Document {
+export interface ILog extends Document {
   habitId: mongoose.Types.ObjectId;
   userId: mongoose.Types.ObjectId;
   completed: boolean;

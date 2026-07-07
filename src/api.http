@@ -19,12 +19,12 @@ Content-Type: application/json
 
 ### Obtener todos los hábitos (SUSTITUIR <token> por el que nos devuelva el login)
 GET http://localhost:3000/habits
-Authorization: Bearer <token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
 
 ### Crear un hábito
 POST http://localhost:3000/habits
 Content-Type: application/json
-Authorization: Bearer <token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
 
 {
   "name": "Ejercicio",
@@ -37,7 +37,7 @@ Authorization: Bearer <token>
 ### Editar un hábito
 PUT http://localhost:3000/habits/<id>
 Content-Type: application/json
-Authorization: Bearer <token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
 
 {
   "name": "Ejercicio actualizado",
@@ -49,4 +49,30 @@ Authorization: Bearer <token>
 
 ### Eliminar un hábito
 DELETE http://localhost:3000/habits/<id>
-Authorization: Bearer <token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+
+### Obtener todos los logs
+GET http://localhost:3000/logs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+
+### Obtener logs filtrados por hábito
+GET http://localhost:3000/logs?habitId=6a4777ff38a3353df27e0241
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+
+### Obtener logs filtrados por mes
+GET http://localhost:3000/logs?month=2026-06
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+
+### Obtener logs filtrados por hábito y mes
+GET http://localhost:3000/logs?habitId=6a4cc77e1efb73142638840b&month=2026-06
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+
+### Crear o actualizar un log
+POST http://localhost:3000/logs/6a4cc77e1efb73142638840b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+
+{
+  "date": "2026-06-07",
+  "note": "Completado sin problemas"
+}
