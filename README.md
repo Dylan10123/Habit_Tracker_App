@@ -79,8 +79,8 @@ habit-tracker/
 - [x] Crear modelos (`User`, `Habit`, `Log`)
 - [x] Autenticación completa (registro, login, middleware JWT)
 - [x] CRUD de hábitos
-- [ ] Endpoint de logs diarios
-- [ ] Lógica de estadísticas (rachas, promedios)
+- [x] Endpoint de logs diarios
+- [x] Lógica de estadísticas (rachas)
 - [ ] Integrar frontend (Angular o Vue)
 
 ## ⚙️ Puesta en marcha
