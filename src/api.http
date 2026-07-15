@@ -19,25 +19,25 @@ Content-Type: application/json
 
 ### Obtener todos los hábitos (SUSTITUIR <token> por el que nos devuelva el login)
 GET http://localhost:3000/habits
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 ### Crear un hábito
 POST http://localhost:3000/habits
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 {
-  "name": "Ejercicio",
-  "category": "Salud",
-  "color": "#6366f1",
-  "targetFrequency": "daily",
-  "timesPerPeriod": 1
+  "name": "TEST WEEKLY",
+  "category": "streak",
+  "color": "#ff00c8",
+  "targetFrequency": "weekly",
+  "timesPerPeriod": 3
 }
 
 ### Editar un hábito
 PUT http://localhost:3000/habits/<id>
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 {
   "name": "Ejercicio actualizado",
@@ -49,30 +49,34 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2Z
 
 ### Eliminar un hábito
 DELETE http://localhost:3000/habits/<id>
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 ### Obtener todos los logs
 GET http://localhost:3000/logs
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 ### Obtener logs filtrados por hábito
 GET http://localhost:3000/logs?habitId=6a4777ff38a3353df27e0241
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 ### Obtener logs filtrados por mes
 GET http://localhost:3000/logs?month=2026-06
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 ### Obtener logs filtrados por hábito y mes
 GET http://localhost:3000/logs?habitId=6a4cc77e1efb73142638840b&month=2026-06
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 ### Crear o actualizar un log
-POST http://localhost:3000/logs/6a4cc77e1efb73142638840b
+POST http://localhost:3000/logs/6a575e8264ec69e1734b1eb1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4MzQxNjYzMywiZXhwIjoxNzgzNTAzMDMzfQ.-cSl1_hIjZw5p0Ld86k6Y8V3H8TI0m8tJYVCkUC8NPc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
 
 {
-  "date": "2026-06-07",
-  "note": "Completado sin problemas"
+  "date": "2026-07-12T23:30:00",
+  "note": "completado"
 }
+
+### Racha
+GET http://localhost:3000/stats/6a575e8264ec69e1734b1eb1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhNDYxNzg2ZjBkZGQwYmJhOTExNzlhOCIsImlhdCI6MTc4NDEwODczNSwiZXhwIjoxNzg0MTk1MTM1fQ.Nx95XJQU9BUUKGdANnzfX3rjp5nutfDHj-y77bJ4oOE
